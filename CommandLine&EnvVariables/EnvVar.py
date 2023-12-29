@@ -1,5 +1,6 @@
 import os
 
+## env variables are read from 'os' module
 ## before executing os.getenv
 ## execute export <argument> that you want to read
 ## example 
