@@ -1,3 +1,4 @@
+#Redaing a list of files from list of folders
 import os
 
 def listOfFilesInFolder(folder):
