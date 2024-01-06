@@ -1,5 +1,6 @@
 import boto3
 
+
 client = boto3.client('s3')
 
 response = client.create_bucket(
@@ -10,3 +11,5 @@ response1 = client.get_bucket_acl(
 )
 
 print(response1)
+
+print(response1["ResponseMetadata"]["RequestId"])
