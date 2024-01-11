@@ -1,10 +1,10 @@
-from flask import flask
+from flask import Flask
 
 # creating a Flask app instance
-app = Flask(_name_)
+app = Flask(__name__)
 
 @app.route('/')
-def hello-world():
+def hello_world():
     return "Welcome to Flask app"
 
 app.run('0.0.0.0')
