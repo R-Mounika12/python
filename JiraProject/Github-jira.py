@@ -4,8 +4,9 @@ from requests.auth import HTTPBasicAuth
 import json
 
 
-app = Flask(_name_)
+app = Flask(__name__)
 
+@app.route('/createJira', methods=['POST'])
 def createJiraIssue():
     url = "https://team-pcwcr7ne.atlassian.net/rest/api/3/issue"
     API_TOKEN = "ATATT3xFfGF05Hu5SASQJGK6nbcP8wjeL2yzYWBMi3XCFs5yXnB_gC1QIIaZdcWcZjcipohPqOk8bBQCF8S9VzIaYkggC8mFWk63NZ1t0R9FH8oiuKIN0osZRrKHNsC5-_GrrVYAl_M3NVlUezmclTZysf9jxAzbPCJUpkWe6Ehw1QrL7yDs9Rc=9088A10D"
